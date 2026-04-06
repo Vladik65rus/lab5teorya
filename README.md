@@ -1,57 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<parse-tree>
+<parse_tree input="fun calc(a: Int, b: Int, c: Int): Int { return a + (b * c) };">
   <node name="S">
-    <leaf value="fun" />
-    <leaf value="calc" type="id" />
-    <leaf value="(" />
+    <leaf>fun</leaf>
+    <leaf type="id">calc</leaf>
+    <leaf>(</leaf>
+    
     <node name="P">
-      <node name="param">
-        <leaf value="a" type="id" />
-        <leaf value=":" />
-        <leaf value="Int" type="T" />
+      <leaf type="id">a</leaf>
+      <leaf>:</leaf>
+      <node name="T">
+        <leaf>Int</leaf>
       </node>
-      <leaf value="," />
+      <leaf>,</leaf>
+      
       <node name="P">
-        <node name="param">
-          <leaf value="b" type="id" />
-          <leaf value=":" />
-          <leaf value="Int" type="T" />
+        <leaf type="id">b</leaf>
+        <leaf>:</leaf>
+        <node name="T">
+          <leaf>Int</leaf>
         </node>
-        <leaf value="," />
+        <leaf>,</leaf>
+        
         <node name="P">
-          <node name="param">
-            <leaf value="c" type="id" />
-            <leaf value=":" />
-            <leaf value="Int" type="T" />
+          <leaf type="id">c</leaf>
+          <leaf>:</leaf>
+          <node name="T">
+            <leaf>Int</leaf>
           </node>
         </node>
       </node>
     </node>
-    <leaf value=")" />
-    <leaf value=":" />
-    <leaf value="Int" type="T" />
-    <leaf value="{" />
-    <leaf value="return" />
+    
+    <leaf>)</leaf>
+    <leaf>:</leaf>
+    
+    <node name="T">
+      <leaf>Int</leaf>
+    </node>
+    
+    <leaf>{</leaf>
+    <leaf>return</leaf>
+    
     <node name="E">
       <node name="E">
-        <leaf value="a" type="id" />
+        <leaf type="id">a</leaf>
       </node>
-      <leaf value="+" />
+      <leaf>+</leaf>
       <node name="E">
-        <leaf value="(" />
+        <leaf>(</leaf>
         <node name="E">
           <node name="E">
-            <leaf value="b" type="id" />
+            <leaf type="id">b</leaf>
           </node>
-          <leaf value="*" />
+          <leaf>*</leaf>
           <node name="E">
-            <leaf value="c" type="id" />
+            <leaf type="id">c</leaf>
           </node>
         </node>
-        <leaf value=")" />
+        <leaf>)</leaf>
       </node>
     </node>
-    <leaf value="}" />
-    <leaf value=";" />
+    
+    <leaf>}</leaf>
+    <leaf>;</leaf>
   </node>
-</parse-tree>
+</parse_tree>
