@@ -207,7 +207,7 @@ python src/main.py test/valid.txt
 python3 src/main.py test/valid.txt
 ```
 ### 6.3 Структура проекта
-
+```
 lab5-semantic-analyzer/
 ├── README.md                    # Документация
 ├── src/                         # Исходные файлы
@@ -228,7 +228,7 @@ lab5-semantic-analyzer/
 └── screenshots/                 # Скриншоты работы программы
     ├── test1_valid.png
     └── ...
-
+```
 ### 6.4 Использование программы
 ```
 # Базовый запуск с анализом файла
